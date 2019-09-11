@@ -1,0 +1,39 @@
+{
+  "name": "react-react-practice",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w",
+    "webpack:production": "NODE_ENV=production webpack",
+    "server": "webpack-dev-server",
+    "dev-reason": "bsb -make-world -w",
+    "dev-webpack": "webpack -w",
+    "dev-webpack-server": "webpack-dev-server",
+    "dev": "concurrently \"npm:dev-*\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" -l \"command\"",
+    "dev:wp": "concurrently \"npm:dev-webpack-*\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" -l \"command\""
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@denommus/react-react": "1.0.2",
+    "@glennsl/bs-json": "5.0.1",
+    "@idkjs/react-frp": "git+https://github.com/idkjs/react-frp.git",
+    "bs-faker": "1.3.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": ">=0.7.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^5.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
